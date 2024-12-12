@@ -60,7 +60,20 @@ function lowercaseFirstLetter(str){
 const mainString = "ToUhid";
 console.log(lowercaseFirstLetter(mainString));
 
+//Task 7
 
+function findAverage(numbers){
+    
+    var sum=0;
+    for(let i=0; i<numbers.length;i++)
+    {
+        sum = parseFloat(sum) + numbers[i];
+    }
+    const avg =parseFloat(sum / numbers.length);
+    return avg;
+}
+
+console.log(findAverage(arr));
 
 
 
