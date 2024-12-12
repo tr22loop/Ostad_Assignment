@@ -48,3 +48,19 @@ function filterEvenNumbers(val){
 }
 
 console.log(filterEvenNumbers(arr));
+
+
+//Task 6
+function lowercaseFirstLetter(str){
+    let temp = str.charAt(0).toLowerCase();
+    temp = temp + str.slice(1);
+    return temp;
+}
+
+const mainString = "ToUhid";
+console.log(lowercaseFirstLetter(mainString));
+
+
+
+
+
