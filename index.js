@@ -33,3 +33,18 @@ function findMin(arr){
 const arr = [4,5,6,7,2,19,10,1,12,22];
 console.log(findMin(arr));
 
+// Task 4
+
+function filterEvenNumbers(val){
+    const evenArr = [];
+    for(let i = 0; i < val.length; i++)
+    {
+        if (val[i] % 2 === 0)
+        {
+            evenArr.push(val[i]);
+        }
+    }
+    return evenArr;
+}
+
+console.log(filterEvenNumbers(arr));
