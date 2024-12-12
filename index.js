@@ -22,3 +22,14 @@ function isOdd(x){
 } 
 
 console.log(isOdd(5));
+
+// Task 3
+
+function findMin(arr){
+    var low = Math.min(...arr); // Passing every value of the array 
+    return low;
+}
+
+const arr = [4,5,6,7,2,19,10,1,12,22];
+console.log(findMin(arr));
+
