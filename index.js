@@ -75,5 +75,18 @@ function findAverage(numbers){
 
 console.log(findAverage(arr));
 
+//Task 8
+
+function isLeapYear(year){
+    if(year% 400 === 0 || (year % 4 ===0 && year % 100 != 0))
+    {
+        return true;
+    }
+    else
+    return false;
+}
+
+console.log(isLeapYear(2016));
+ 
 
 
