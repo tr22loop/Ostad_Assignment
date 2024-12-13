@@ -30,7 +30,7 @@ function findMin(arr){
     return low;
 }
 
-const arr = [4,5,6,7,2,19,10,1,12,22];
+const arr = [4,5,6,7,2,19,10,1,12,22,17]; // This array will be used to call the upcoming functions.
 console.log(findMin(arr));
 
 // Task 4
@@ -49,6 +49,24 @@ function filterEvenNumbers(val){
 
 console.log(filterEvenNumbers(arr));
 
+//Task 5
+
+function sortArrayDescending(nums){
+    for(let i=0; i< nums.length; i++)
+    {
+        for(let j=i+1; j<nums.length;j++)
+        {
+            if (nums[i]<nums[j])
+            {
+                let temp = nums[i];
+                nums[i] = nums[j];
+                nums[j]= temp;
+            }
+        }
+    }
+    return nums;
+}
+console.log(sortArrayDescending(arr));
 
 //Task 6
 function lowercaseFirstLetter(str){
